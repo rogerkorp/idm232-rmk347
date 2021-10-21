@@ -2,6 +2,184 @@
     --carrot: #c26c2d;
     --cream: #fcf6ec;
     --dark-chocolate: #532800;
-    --ghost-chocolate: #a36948;
+    --ghost-chocolate: #a3694865;
     --milk: #fffdfb;
 }
+
+body{
+    font-family: georgiaregular;
+    background-color: var(--cream);
+}
+
+img{
+    max-width: 100%;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    color: var(--carrot);
+}
+
+#home{
+    display: block;
+}
+
+#homepage-main{
+    color: var(--carrot);
+    max-width: 760px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#homepage-main h2{
+    font-family: georgiaitalic;
+    margin: 0;
+}
+
+#homepage-main h1{
+    font-family: futurabold;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0;
+    margin-bottom: .5em
+}
+
+#homepage-main img{
+    box-shadow: 3px 3px 5px 0px var(--ghost-chocolate);
+}
+
+#homepage-nav{
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#homepage-nav a{
+    color: var(--milk);
+    background-color: var(--dark-chocolate);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    margin-top: 1em;
+    box-shadow: 3px 3px 5px 0px var(--ghost-chocolate);
+    border-radius: 8px;
+    font-family: georgiabold_italic;
+    position: relative;
+}
+
+#homepage-nav a:hover{
+    cursor: pointer;
+    animation-name: hover;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover{
+    0%{
+        background-color: var(--dark-chocolate);
+        bottom: 0;
+    }
+    100%{
+        background-color: var(--carrot);
+        bottom: 4px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #homepage-main h1{
+        font-size: 4em;
+    }
+    #homepage-main h2{
+        font-size: 2em;
+    }
+    #homepage-nav a{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #homepage-main h1{
+        font-size: 6em;
+        margin-bottom: 0;
+    }
+    #homepage-main h2{
+        font-size: 4em;
+    }
+    #homepage-nav a{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    #homepage-main{
+        margin-top: 5vh;
+    }
+
+}
+
+@media screen and (min-height: 800px){
+
+    #homepage-main{
+        margin-top: 10vh;
+    }
+
+}
+
+
+@font-face {
+    font-family: 'futurabold';
+    src: url('fonts/futura_bold-webfont.woff2') format('woff2'),
+         url('fonts/futura_bold-webfont.woff') format('woff'),
+         url('fonts/futura_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { /* Georgia Bold Italic */
+    font-family: 'georgiabold_italic';
+    src: url('fonts/georgia_bold_italic-webfont.woff2') format('woff2'),
+         url('fonts/georgia_bold_italic-webfont.woff') format('woff'),
+         url('fonts/georgia_bold_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face { /* Georgia Bold */
+    font-family: 'georgiabold';
+    src: url('fonts/georgia_bold-webfont.woff2') format('woff2'),
+         url('fonts/georgia_bold-webfont.woff') format('woff'),
+         url('fonts/georgia_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face { /* Georgia Italic */
+    font-family: 'georgiaitalic';
+    src: url('fonts/georgia_italic-webfont.woff2') format('woff2'),
+         url('fonts/georgia_italic-webfont.woff') format('woff'),
+         url('fonts/georgia_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face { /* Georgia Regular */
+    font-family: 'georgiaregular';
+    src: url('fonts/georgia-webfont.woff2') format('woff2'),
+         url('fonts/georgia-webfont.woff') format('woff'),
+         url('fonts/georgia-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ID Rules */
