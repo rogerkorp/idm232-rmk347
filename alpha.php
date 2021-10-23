@@ -1,34 +1,31 @@
-<!-- IDM 232: Alpha Build -->
-<!-- Written by Roger Korpics -->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Roger's Recipe Book</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <title>Alpha = Prototype</title>
+        <link rel="stylesheet" href="stylesheet.css?v=<?php echo time(); ?>">
     </head>
-    <body id=home>
-        
-        <main id="homepage-main">
-            <h2>Roger K's</h2>
-            <h1>Recipe Book</h1>
-            
-            <picture>
-                <source media="(min-width: 768px)" srcset="https://via.placeholder.com/600x450"/>
-                <img src="https://via.placeholder.com/400x300">
-            </picture>  
+    <body>
+        <main>
+            <header>
+                <h2>IDM 232
+                <h1>Alpha Prototype</h1> 
+            </header>
+
+            <section id="project links">
+                <a href="home.php">Home Template</a>
+                <a href="categories.php">Catergory Template</a>
+                <a href="recipe.php">Recipe Template</a>
+                <a>Search Template</a>
+
+                <a>View All Recipes Template</a>
+                <a>Modify Recipe Template </a>
+
+                <a>Style Tile</a>
+                <a>Wireframes</a>        
+            </section>
         </main>
-        
-        <nav id="homepage-nav">
-            <a>Search</a>
-            <a>Browser</a>
-        </nav>
-
-        <?php
-        include 'footer.php'
-        ?>
-
+       
     </body>
 </html>
