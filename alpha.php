@@ -13,11 +13,11 @@
                 <h1>Alpha Prototype</h1> 
             </header>
 
-            <section id="project links">
+            <section id="project-links">
                 <a href="home.php">Home Template</a>
                 <a href="categories.php">Catergory Template</a>
                 <a href="recipe.php">Recipe Template</a>
-                <a>Search Template</a>
+                <a href="search.php">Search Template</a>
 
                 <a>View All Recipes Template</a>
                 <a>Modify Recipe Template </a>

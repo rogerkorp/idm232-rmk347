@@ -12,7 +12,7 @@
         include_once 'navigation.php'
         ?>
 
-        <h1 id="cat-head">Catergories</h1>
+        <h1 class="page-head">Catergories</h1>
             <main id="cat-list">
                 <?php
                 include 'cat.php';

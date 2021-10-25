@@ -2,7 +2,7 @@
     --carrot: #c26c2d;
     --cream: #fcf6ec;
     --dark-chocolate: #532800;
-    --ghost-chocolate: #a3694865;
+    --ghost-chocolate: #a3694834;
     --milk: #fffdfb;
 }
 
@@ -25,6 +25,10 @@ footer{
     text-align: center;
     margin-top: 2em;
     color: var(--carrot);
+}
+
+a{
+    text-decoration: none;
 }
 
 .header-nav{
@@ -123,7 +127,7 @@ footer{
 }
 
 
-#cat-head{
+.page-head{
     font-family: futurabold;
     text-transform: uppercase;
     font-size: 2em;
@@ -219,6 +223,93 @@ display: grid;
     padding-top: 1em;
 }
 
+#search-box{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: .5em;
+    background-color: var(--milk);
+    border-radius: 3em;
+    box-shadow: inset 3px 3px 5px 0px var(--ghost-chocolate);
+}
+
+#search{
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    padding: 1em;
+    background-color: transparent;
+    border-radius: 3em;
+    font-family: georgiaitalic;
+    font-size: 1em;
+    color: var(--carrot);
+}
+
+#go-button{
+    background-color: var(--dark-chocolate);
+    padding: .5em;
+    border-radius: 3em;
+    width: 6em;
+    border: none;
+    color: var(--milk);
+    font-family: georgiabold_italic;
+    font-size: 1.15em;
+}
+
+#go-button:hover{
+    cursor: pointer;
+    animation-name: hover;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+#search-page{
+    margin: 1em;
+}
+
+.search-result{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'search-thumbnail search-details';
+    padding: 1em;
+    background-color: var(--milk);
+    margin: 1em;
+    box-shadow: 2px 7px 7px -5px var(--ghost-chocolate);
+    color: var(--dark-chocolate);
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-details{
+    margin-left: 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#search-title{
+    margin: 0;
+    font-family: futurabold;
+    text-transform: uppercase;
+    font-size: 1.25em;
+
+}
+
+#search-description{
+    margin: 0;
+    padding-top: .25em;
+    font-size: 1em;
+    color: var(--carrot);
+    font-family: georgiaitalic;
+}
+
+#search-thumbnail{
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 @keyframes hover{
     0%{
@@ -230,6 +321,16 @@ display: grid;
         bottom: 4px;
     }
 }
+
+@keyframes hover-simple{
+    0%{
+        background-color: var(--dark-chocolate);
+    }
+    100%{
+        background-color: var(--carrot);
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     #homepage-main h1{
@@ -255,6 +356,14 @@ display: grid;
     .cat{
         margin-left: .25em;
         margin-right: .25em;
+    }
+  
+    #search-title{
+        font-size: 2em;
+    }
+    
+    #search-description{
+        font-size: 1.25em;
     }
 }
 
