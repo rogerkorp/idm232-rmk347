@@ -31,6 +31,34 @@ a{
     text-decoration: none;
 }
 
+#alpha{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#alpha h1{
+    font-family: futurabold;
+    text-transform: uppercase;
+}
+
+#alpha a{
+    border: 2px solid var(--dark-chocolate);
+    border-radius: 3em;
+    padding: 1em;
+    line-height: 4em;
+    color: var(--dark-chocolate);
+    font-family: georgiabold_italic;
+}
+
+#alpha a:hover{
+    cursor: pointer;
+    animation-name: hover-alpha;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
 .header-nav{
     display: grid;
     grid-template-columns: 4em auto 7em 7em;
@@ -117,6 +145,7 @@ a{
     border-radius: 8px;
     font-family: georgiabold_italic;
     position: relative;
+    text-decoration: none;
 }
 
 #homepage-nav a:hover{
@@ -140,7 +169,7 @@ a{
 
 
 #cat-list{
-display: grid;
+    display: grid;
 }
 
 .cat{
@@ -261,7 +290,7 @@ display: grid;
 
 #go-button:hover{
     cursor: pointer;
-    animation-name: hover;
+    animation-name: hover-simple;
     animation-duration: .25s;
     animation-fill-mode: forwards;
 }
@@ -311,6 +340,130 @@ display: grid;
     margin-bottom: auto;
 }
 
+.admin-main{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em
+}
+
+#admin-nav{
+    background-color: var(--carrot);
+}
+
+#admin-nav .nav-link{
+    background-color: var(--milk);
+    color: var(--carrot);
+    border: 2px solid var(--milk);
+}
+
+#admin-nav .nav-link:hover{
+    animation-name: hover-admin;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#admin-body{
+    background-color: var(--milk);
+}
+
+.admin-recipe{
+    border-bottom: 2px solid var(--dark-chocolate);
+    margin: 1em;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: auto 3em 3em;
+}
+
+.admin-recipe a{
+   color: var(--carrot);
+   text-decoration: underline;
+   font-family: georgiaitalic;
+}
+
+.admin-recipe a:hover{
+    cursor: pointer;
+ }
+
+.admin-header{
+    font-family: futurabold;
+    text-transform: uppercase;
+}
+#add-recipe{
+    background-color: var(--dark-chocolate);
+    border: none;
+    border-radius: 3em;
+    padding: 1em;
+    color: var(--milk);
+    font-family: georgiabold_italic;
+}
+
+#add-step{
+    background-color: var(--dark-chocolate);
+    border: none;
+    border-radius: 3em;
+    padding: 1em;
+    color: var(--milk);
+    font-family: georgiabold_italic;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+}
+
+#add-step:hover{
+    cursor: pointer;
+    animation-name: hover-simple;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+
+#edit-recipe{
+    background-color: var(--dark-chocolate);
+    border: none;
+    border-radius: 6px;
+    padding: 1em;
+    color: var(--milk);
+    font-family: georgiabold_italic;
+}
+
+#add-recipe:hover{
+    cursor: pointer;
+    animation-name: hover-simple;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+#edit-recipe:hover{
+    cursor: pointer;
+    animation-name: hover-simple;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+#recipe-form input{
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border: 1px solid var(--dark-chocolate);
+    padding: 1em;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#recipe-form{
+    margin-top: 1em;
+}
+
+.longtext{
+    min-height: 8em;
+}
+
+
+
 @keyframes hover{
     0%{
         background-color: var(--dark-chocolate);
@@ -319,6 +472,31 @@ display: grid;
     100%{
         background-color: var(--carrot);
         bottom: 4px;
+    }
+}
+
+@keyframes hover-alpha{
+    0%{
+    color: var(--dark-chocolate);
+    background-color: var(--cream);
+    }
+    
+    100%{
+     color: var(--cream);
+     background-color: var(--dark-chocolate);
+    }
+}
+
+
+
+@keyframes hover-admin{
+    0%{
+        background-color: var(--milk);
+        color: var(--carrot)
+    }
+    100%{
+        background-color: var(--carrot);
+        color: var(--milk);
     }
 }
 

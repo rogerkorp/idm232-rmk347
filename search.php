@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Categories</title>
+        <title>Search</title>
         <link rel="stylesheet" href="stylesheet.css?v=<?php echo time(); ?>">
     </head>
     <body>

@@ -7,23 +7,23 @@
         <link rel="stylesheet" href="stylesheet.css?v=<?php echo time(); ?>">
     </head>
     <body>
-        <main>
+        <main id="alpha">
             <header>
-                <h2>IDM 232
-                <h1>Alpha Prototype</h1> 
+                <h2>RMK ~ IDM 232
+                <h1>Alpha Build</h1> 
             </header>
 
             <section id="project-links">
-                <a href="home.php">Home Template</a>
-                <a href="categories.php">Catergory Template</a>
-                <a href="recipe.php">Recipe Template</a>
-                <a href="search.php">Search Template</a>
-
-                <a>View All Recipes Template</a>
-                <a>Modify Recipe Template </a>
-
-                <a>Style Tile</a>
-                <a>Wireframes</a>        
+                <a href="home.php">Home Template</a><br>
+                <a href="categories.php">Catergory Template</a><br>
+                <a href="recipe.php">Recipe Template</a><br>
+                <a href="search.php">Search Template</a><br>
+                <br>
+                <a href="admin-recipes.php">View All Recipes Template</a><br>
+                <a href="edit-recipe.php">Modify Recipe Template</a><br>
+                <br>
+                <a href="alpha-resources/idm232-rmk347-styletile.pdf">Style Tile</a><br>
+                <a href="alpha-resources/idm232-rmk347-alpha-design.pdf">Wireframes</a><br> 
             </section>
         </main>
        

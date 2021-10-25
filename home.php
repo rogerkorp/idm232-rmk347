@@ -22,7 +22,7 @@
         </main>
         
         <nav id="homepage-nav">
-            <a href="">Search</a>
+            <a href="search.php">Search</a>
             <a href="categories.php">Browse</a>
         </nav>
 
