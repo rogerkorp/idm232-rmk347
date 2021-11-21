@@ -1,3 +1,14 @@
+<?php
+include 'connection.php';
+
+if (mysqli_connect_errno()) {
+    die ("Database connection failed: " .
+      mysqli_connect_error() .
+      " (" . mysqli_connect_errno() . ")"
+    );
+  }
+?>
+
 <nav class="header-nav" id="admin-nav">
 <a href="home.php">    
 <img id="logo" src="https://via.placeholder.com/150">
