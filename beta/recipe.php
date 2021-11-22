@@ -9,30 +9,36 @@
     <body>
 
         <?php
-        include_once 'navigation.php'
+        include_once 'navigation.php';
+            $id = mysqli_real_escape_string($db_connection, $_POST['id']);
+            $recipe_query = "SELECT * FROM recipes WHERE ID = '$id'"; //Asks for the database to Select all results from recipes
+            $recipe_result = mysqli_query($db_connection, $recipe_query);
+            if (!$recipe_result){
+                die("Database query failed.");
+            }
         ?>
+        <?php
+        while($row = mysqli_fetch_assoc($recipe_result)){
+            echo "<section class='recipe-header'>";
+            echo  "<h1>" . $row['name'] . "</h1>";
+            echo  "<h2> Cook Time: " . $row['name'] . " Minutes. </h2>";
+            echo  "<h2> Serves: " . $row['serving-amount']; 
+            echo  "<img src='https://via.placeholder.com/600x300' alt='placeholder image'></img>";
+            echo "</section>";
+            echo "<section class='recipe'>";
+            echo "<h1>Ingredients</h1>";
+            echo $row['ingredients'];
+            echo "</section>";
+            echo "<section class='recipe'>";
+            echo "<h1>Instructions</h1>";
+            echo $row['instructions'];
+            echo "<img src='https://via.placeholder.com/600x300' alt='placeholder image'></img>";
+            echo "</section>";
+        }
+        mysqli_free_result($recipe_result);
+    ?>
 
-        <section class="recipe-header">
-            <h1>Recipe Name</h1>
-            <h2>Cook Time: XX Minutes</h2>
-            <h2>Serves X</h2>
-            <img src="https://via.placeholder.com/600x300" alt="placeholder image"></img>
-        </section>
 
-        <section class="recipe">
-            <h1>Ingredients</h1>
-            <ul>
-                <li>Item Number 1</li>
-                <li>Item Number 2</li>
-                <li>Item Number 3</li>
-            </ul>
-        </section>
-
-        <section class="recipe">
-            <h1>Step 1</h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae rutrum nulla. Aliquam lobortis lobortis dui, eget semper justo tempor at.
-            <img src="https://via.placeholder.com/600x300" alt="placeholder image"></img>
-        </section>
 
         <?php
         include 'footer.php'
