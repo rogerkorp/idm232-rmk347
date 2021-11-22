@@ -10,16 +10,16 @@
         <?php
         include_once 'admin-nav.php'
         ?>
+
         <main class="admin-main">
         <h1 class="admin-header">Recipe List</h1>
-        <button type="button" id="add-recipe">+ Add Recipe</button>
+        <a href="edit-recipe.php" id="add-recipe">+ Add Recipe</a>
             <?php
                 include 'admin-recipe.php';
-                include 'admin-recipe.php';
-                include 'admin-recipe.php';
-                include 'admin-recipe.php';
-                include 'admin-recipe.php';
+                mysqli_free_result($name_result);
+                mysqli_close($db_connection);
             ?>
+
         </main>
 
         <?php
