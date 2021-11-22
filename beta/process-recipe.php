@@ -26,7 +26,8 @@ if (isset($_POST['edit-recipe'])) { //looks for a passed form from something nam
     // Execute Query
     $db_results = mysqli_query($db_connection, $query);
     if ($db_results) {
-        echo "Yay it worked :)";
+      header('Location: admin-recipes.php');
+      die();
     } else {
         echo "It didn't work :(";
     }

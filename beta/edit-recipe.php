@@ -11,7 +11,7 @@
         include_once 'admin-nav.php'
         ?>
         <main class="admin-main">
-        <h1 class="admin-header">Edit Recipe</h1>
+        <h1 class="admin-header">Add Recipe</h1>
         
         <form action='process-recipe.php' id='recipe-form' method='post'>
             <input type='text' id='name' name='name' placeholder='Recipe Name'><br>
@@ -25,8 +25,6 @@
             <br>
             <input type='submit' name='edit-recipe'>
         </form>
-
-
 
         </main>
 
