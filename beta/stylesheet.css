@@ -372,7 +372,28 @@ a{
     margin: 1em;
     padding: .5em;
     display: grid;
-    grid-template-columns: auto 3em 3em;
+    grid-template-columns: auto 3.25em 4em 3.75em;
+
+}
+
+.admin-recipe input{
+    background-color: var(--dark-chocolate);
+    padding: 1em;
+    border-radius: 8px;
+    border: none;
+    color: var(--cream);
+    font-family: georgia;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.admin-recipe input:hover{
+    cursor: pointer;
+    animation-name: hover-simple;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+    
 }
 
 .admin-recipe a{
@@ -381,9 +402,6 @@ a{
    font-family: georgiaitalic;
 }
 
-.admin-recipe a:hover{
-    cursor: pointer;
- }
 
 .admin-header{
     font-family: futurabold;
@@ -393,7 +411,9 @@ a{
     background-color: var(--dark-chocolate);
     border: none;
     border-radius: 3em;
-    padding: 1em;
+    padding: .75em;
+    padding-left: 1em;
+    padding-right: 1em;
     color: var(--milk);
     font-family: georgiabold_italic;
 }
@@ -447,11 +467,13 @@ a{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    border: none;
+    border-radius: 4px;
     border: 1px solid var(--dark-chocolate);
     padding: 1em;
     box-sizing: border-box;
     resize: vertical;
+    font-family: georgia;
+    font-size: 1em;
 }
 
 #recipe-form{
