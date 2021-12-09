@@ -23,10 +23,7 @@
                     <input type="submit" name="delete-recipe" value="Delete">
                     </form>';
 
-        echo '<form action="recipe.php" id="delete-recipe" method="post">
-                <input type="hidden" name="id" value=' . $row['id'] . '>
-                <input type="submit" name="view-recipe" value="View">
-                </form>';
+        echo '<a href="recipe.php?id=' . $row['id'] . '">View</a>';;
         echo '</div>';
     }
 ?>
