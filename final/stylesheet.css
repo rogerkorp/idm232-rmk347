@@ -29,6 +29,7 @@ footer{
 
 a{
     text-decoration: none;
+    color: var(--dark-chocolate);
 }
 
 #alpha{
@@ -173,7 +174,8 @@ a{
 }
 
 .cat{
-    display: grid;
+    display: flex;
+    align-items: center;
     grid-template-columns: 1fr 2fr;
     padding: 1em;
     background-color: var(--milk);
@@ -187,6 +189,7 @@ a{
 
 .cat h2{
     font-family: georgiabold_italic;
+    color: var(--carrot);
     padding: .5em;
     margin: 0;
     margin: auto;
@@ -300,7 +303,6 @@ a{
 }
 
 .search-result{
-    display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: 'search-thumbnail search-details';
     padding: 1em;
@@ -397,9 +399,29 @@ a{
 }
 
 .admin-recipe a{
-   color: var(--carrot);
-   text-decoration: underline;
-   font-family: georgiaitalic;
+    background-color: var(--dark-chocolate);
+    border-radius: 8px;
+    border: none;
+    color: var(--cream);
+    font-family: georgia;
+    font-weight: bold;
+    font-style: italic;
+    font-size: .75em;
+    height: 2em;
+    width: 4em;
+    padding-top: 1em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    top: 1px;
+    position: relative;
+}
+
+.admin-recipe a:hover{
+    cursor: pointer;
+    animation-name: hover-simple;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
 }
 
 

@@ -29,6 +29,7 @@
              echo   '<input type="text" id="name" name="name" value="' .  $row['name'] . '"placeholder="Recipe Name"><br>';
              echo   '<input type="text" id="cooking-time" name="cooking-time" value="' . $row['cooking-time'] .'" placeholder="Minutes to Bake"><br>';
              echo   '<input type="text" id="serving-amount" name="serving-amount" value="' .  $row['serving-amount'] .'" placeholder="Makes how many Servings?"><br>';
+             echo   '<input type="text" id="category" name="category" value="' . $row['category'] . '"><br>';
              echo   '<br>';
              echo   '<h2>Ingredients</h2>';
              echo   '<input type="text" class="longtext" id="ingredients"  rows="30" cols="10" name="ingredients" value="' . $row['ingredients'] .'" placeholder="List of ingredients..."><br>';

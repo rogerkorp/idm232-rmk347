@@ -44,7 +44,6 @@
             <section class='recipe'>
                 <h1>Instructions</h1>
                 <?php echo $data['instructions']; ?>
-                <img src='https://via.placeholder.com/600x300' alt='placeholder image'></img>
             </section>"
         }
     

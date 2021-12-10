@@ -12,8 +12,6 @@ if (mysqli_connect_errno()) {
 if (isset($_POST['edit-recipe'])) { //looks for a passed form from something named edit-recipe
     //  Parse Data
   
-
-
     $name = mysqli_real_escape_string($db_connection, $_POST['name']);
     $cookingtime = mysqli_real_escape_string($db_connection, $_POST['cooking-time']);
     $servingamount =  mysqli_real_escape_string($db_connection, $_POST['serving-amount']);
@@ -33,17 +31,14 @@ if (isset($_POST['edit-recipe'])) { //looks for a passed form from something nam
     $db_file_results = mysqli_query($db_connection, $file_query);
     if ($db_file_results) {
         if (move_uploaded_file($temp_name, $file_destination)) {
-
           $location_query = "SELECT * FROM files WHERE file_path='{$file_path}'";
-
           $db_location_results = mysqli_query($db_connection, $location_query);
           if ($db_location_results){
             $new_uploaded_file_id = mysqli_fetch_assoc($db_location_results)['id'];
           }
-          
         }
     } else {
-        echo "Image didn't uploadd :(";
+        echo "Image didn't upload :(";
     }
    
 

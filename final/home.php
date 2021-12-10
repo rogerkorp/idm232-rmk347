@@ -14,11 +14,8 @@
         <main id="homepage-main">
             <h2>Roger K's</h2>
             <h1>Recipe Book</h1>
-            
-            <picture>
-                <source media="(min-width: 768px)" srcset="https://via.placeholder.com/600x450"/>
-                <img src="https://via.placeholder.com/400x300">
-            </picture>  
+            <img src="assets/recipe-book-home.png">
+ 
         </main>
         
         <nav id="homepage-nav">

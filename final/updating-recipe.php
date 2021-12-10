@@ -18,11 +18,12 @@ if (isset($_POST['update-recipe'])) { //looks for a passed form from something n
     $servingamount =  mysqli_real_escape_string($db_connection, $_POST['serving-amount']);
     $ingredients = mysqli_real_escape_string($db_connection, $_POST['ingredients']);
     $instructions = mysqli_real_escape_string($db_connection, $_POST['instructions']);
+    $category = mysqli_real_escape_string($db_connection, $_POST['category']);
    
 
     // Build Query
 
-    $query = "UPDATE `recipes` SET `name`='{$name}',`cooking-time`='{$cookingtime}',`serving-amount`='{$servingamount}',`ingredients`='{$ingredients}',`instructions`='{$instructions}' WHERE ID = {$id}";
+    $query = "UPDATE `recipes` SET `name`='{$name}',`cooking-time`='{$cookingtime}',`serving-amount`='{$servingamount}',`ingredients`='{$ingredients}',`instructions`='{$instructions}',`category`='{$category}' WHERE ID = {$id}";
 
 
     // Execute Query

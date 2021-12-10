@@ -39,6 +39,7 @@
                     value="<?php echo @$_GET['search']; ?>">
                     <input type="submit" id="go-button" value="Go">
                 </form>
+                
                 <?php
 
                     if ($use_result) {
